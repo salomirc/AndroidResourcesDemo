@@ -1,7 +1,8 @@
 package com.example.androidresourcesdemo
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.androidresourcesdemo.databinding.ActivityMainBinding
 
@@ -13,10 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // Inflate view and obtain an instance of the binding class.
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-    }
 
-    override fun onResume() {
-        super.onResume()
-
+        binding.animationButton.setOnClickListener {
+            startActivity(Intent(this, AnimationActivity::class.java))
+        }
     }
 }
