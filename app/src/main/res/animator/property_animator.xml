@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:ordering="sequentially">
+    <objectAnimator
+        android:duration="@integer/animation_time_normal"
+        android:propertyName="translationX"
+        android:valueTo="@dimen/my_translate_x_value"
+        android:valueType="floatType" />
+    <objectAnimator
+        android:duration="@integer/animation_time_normal"
+        android:propertyName="translationY"
+        android:valueTo="@dimen/my_translate_y_value"
+        android:valueType="floatType" />
+    <objectAnimator
+        android:duration="@integer/animation_time_normal"
+        android:propertyName="translationX"
+        android:valueTo="0dp"
+        android:valueType="floatType" />
+    <objectAnimator
+        android:duration="@integer/animation_time_normal"
+        android:propertyName="translationY"
+        android:valueTo="0dp"
+        android:valueType="floatType" />
     <set>
         <objectAnimator
+            android:duration="@integer/animation_time_normal"
             android:propertyName="translationX"
-            android:duration="3000"
-            android:valueTo="100dp"
-            android:valueType="floatType"
             android:repeatCount="1"
-            android:repeatMode="reverse"/>
+            android:repeatMode="reverse"
+            android:valueTo="@dimen/my_translate_x_value"
+            android:valueType="floatType" />
         <objectAnimator
+            android:duration="@integer/animation_time_normal"
             android:propertyName="translationY"
-            android:duration="3000"
-            android:valueTo="100dp"
-            android:valueType="floatType"
             android:repeatCount="1"
-            android:repeatMode="reverse"/>
+            android:repeatMode="reverse"
+            android:valueTo="@dimen/my_translate_y_value"
+            android:valueType="floatType" />
     </set>
     <objectAnimator
+        android:duration="@integer/animation_time_normal"
         android:propertyName="alpha"
-        android:duration="3000"
-        android:valueTo="0f"
         android:repeatCount="1"
-        android:repeatMode="reverse"/>
+        android:repeatMode="reverse"
+        android:valueTo="@dimen/alpha_value_animation" />
 </set>

@@ -14,6 +14,11 @@ class AnimationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        actionBar.apply {
+            title = AnimationActivity::class.java.simpleName
+        }
+
         // Inflate view and obtain an instance of the binding class.
         binding = DataBindingUtil.setContentView(this, R.layout.activity_animation)
 

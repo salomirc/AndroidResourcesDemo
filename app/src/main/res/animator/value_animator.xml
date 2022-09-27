@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animator xmlns:android="http://schemas.android.com/apk/res/android"
-    android:duration="1000"
-    android:valueFrom="#FFC107"
-    android:valueTo="#E91E63"
+    android:duration="@integer/animation_time_normal"
+    android:valueFrom="@color/animation_initial_color"
+    android:valueTo="@color/animation_final_color"
     android:repeatCount="-1"
     android:repeatMode="reverse" />

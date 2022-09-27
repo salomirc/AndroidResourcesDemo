@@ -12,6 +12,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        actionBar.apply {
+            title = resources.getText(R.string.home_page_title)
+        }
+
         // Inflate view and obtain an instance of the binding class.
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="my_translate_x_value">150dp</dimen>
+    <dimen name="my_translate_y_value">100dp</dimen>
+    <item name="alpha_value_animation" type="dimen" format="float">0.1</item>
+</resources>

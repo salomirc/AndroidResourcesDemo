@@ -12,4 +12,6 @@
     <color name="colorDisabled">@android:color/holo_blue_light</color>
     <color name="colorCustomButton">@android:color/holo_orange_dark</color>
     <color name="colorDarkCustomButton">#FF673AB7</color>
+    <color name="animation_initial_color">#FFFFC107</color>
+    <color name="animation_final_color">#FFE91E63</color>
 </resources>
