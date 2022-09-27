@@ -21,9 +21,11 @@
         <item name="colorAccentCustom">@color/colorCustomButton</item>
         <item name="rippleColorCustom">@color/colorWhiteAlpha50</item>
     </style>
+
     <style name="Widget.App.MaterialButtonCustom" parent="Widget.MaterialComponents.Button">
         <item name="materialThemeOverlay">@style/ThemeOverlay.App.MaterialButtonCustom</item>
     </style>
+
     <style name="ThemeOverlay.App.MaterialButtonCustom" parent="">
         // the button Tint color
         <item name="colorPrimary">?attr/colorAccentCustom</item>
