@@ -3,6 +3,7 @@ package com.example.androidresourcesdemo
 import android.animation.AnimatorInflater
 import android.animation.AnimatorSet
 import android.animation.ValueAnimator
+import android.graphics.drawable.Animatable
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
@@ -42,8 +43,26 @@ class AnimationActivity : AppCompatActivity() {
         }
 
         binding.tweenAnimatorButton.setOnClickListener {
-            val hyperSpaceJump = AnimationUtils.loadAnimation(this, R.anim.hyperspace_jump)
-            binding.droidImageView.startAnimation(hyperSpaceJump)
+            binding.droidImageView.apply {
+                // reset the content and background of the ImageView if the
+                // frameAnimatorButton was clicked
+                background?.let {
+                    setImageResource(R.drawable.ic_baseline_android_24)
+                    setBackgroundResource(0)
+                }
+                val hyperSpaceJump = AnimationUtils.loadAnimation(this@AnimationActivity, R.anim.hyperspace_jump)
+                binding.droidImageView.startAnimation(hyperSpaceJump)
+            }
+        }
+
+        binding.frameAnimatorButton.setOnClickListener {
+            binding.droidImageView.apply {
+                setImageResource(0)
+                setBackgroundResource(R.drawable.moon_phase_frame_anim)
+                background.let {
+                    if (it is Animatable) it.start()
+                }
+            }
         }
     }
 }
