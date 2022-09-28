@@ -4,6 +4,7 @@ import android.animation.AnimatorInflater
 import android.animation.AnimatorSet
 import android.animation.ValueAnimator
 import android.os.Bundle
+import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.androidresourcesdemo.databinding.ActivityAnimationBinding
@@ -38,6 +39,11 @@ class AnimationActivity : AppCompatActivity() {
                     }
                     start()
                 }
+        }
+
+        binding.tweenAnimatorButton.setOnClickListener {
+            val hyperSpaceJump = AnimationUtils.loadAnimation(this, R.anim.hyperspace_jump)
+            binding.droidImageView.startAnimation(hyperSpaceJump)
         }
     }
 }

@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">AndroidResourcesDemo</string>
     <string name="home_page_title">Android Resources Demo Project</string>
-    <string name="property_animator">Property Animator</string>
-    <string name="value_animator">Value Animator</string>
+    <string name="property_animation">Property Animation</string>
+    <string name="value_animation">Value Animation</string>
+    <string name="tween_animation">Tween Animation</string>
     <string name="animation_resource">Animation Resource</string>
+    <string name="android_pictogram">android pictogram</string>
 </resources>
