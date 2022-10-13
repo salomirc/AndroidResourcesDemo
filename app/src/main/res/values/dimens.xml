@@ -3,4 +3,10 @@
     <dimen name="my_translate_x_value">150dp</dimen>
     <dimen name="my_translate_y_value">100dp</dimen>
     <item name="alpha_value_animation" type="dimen" format="float">0.1</item>
+
+    //custom mtrl button ripple color resource dimen
+    <item format="float" name="custom_mtrl_high_ripple_default_alpha" type="dimen">0.00</item>
+    <item format="float" name="custom_mtrl_high_ripple_focused_alpha" type="dimen">0.24</item>
+    <item format="float" name="custom_mtrl_high_ripple_hovered_alpha" type="dimen">0.08</item>
+    <item format="float" name="custom_mtrl_high_ripple_pressed_alpha" type="dimen">0.24</item>
 </resources>

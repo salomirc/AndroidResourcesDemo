@@ -3,6 +3,7 @@
     <style name="AppThemeBase" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="materialButtonStyle">@style/Widget.App.MaterialButtonCustom</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
     </style>
 
     <!-- Application theme. -->
@@ -19,10 +20,12 @@
         <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="colorAccentCustom">@color/colorCustomButton</item>
-        <item name="rippleColorCustom">@color/colorWhiteAlpha50</item>
+        <item name="rippleColorCustom">@android:color/holo_blue_dark</item>
     </style>
 
     <style name="Widget.App.MaterialButtonCustom" parent="Widget.MaterialComponents.Button">
+        // the ripple color
+        <item name="rippleColor">?attr/rippleColorCustom</item>
         <item name="materialThemeOverlay">@style/ThemeOverlay.App.MaterialButtonCustom</item>
     </style>
 
@@ -31,7 +34,38 @@
         <item name="colorPrimary">?attr/colorAccentCustom</item>
         // the disabled Tint color
         <item name="colorOnSurface">@color/colorDisabled</item>
-        // the ripple color
-        <item name="rippleColor">?attr/rippleColorCustom</item>
     </style>
+
+    <style name="MyCustomButtonStyle">
+        <item name="android:textAppearance">@style/ButtonEmphasisTextAppearance</item>
+        <item name="android:textColor">#FFEB3B</item>
+    </style>
+
+    <style name="ButtonEmphasisTextAppearance" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ButtonEmphasisTextAppearance.Large">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="TextViewEmphasisTextAppearance" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent.Round">
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="test" parent="@android:style/TextAppearance.Material">
+
+    </style>
+
 </resources>

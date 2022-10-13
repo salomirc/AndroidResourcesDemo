@@ -7,4 +7,5 @@
     <string name="frame_animation">Frame Animation</string>
     <string name="animation_resource">Animation Resource</string>
     <string name="android_pictogram">android pictogram</string>
+    <string name="hello_android">Hello Android !</string>
 </resources>
