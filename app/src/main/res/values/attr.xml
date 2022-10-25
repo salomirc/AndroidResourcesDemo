@@ -3,4 +3,6 @@
     <!-- Custom attributes -->
     <attr name="colorAccentCustom" format="color" />
     <attr name="rippleColorCustom" format="color" />
+    <attr name="animationInitialColor" format="color" />
+    <attr name="animationFinalColor" format="color" />
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.App.Button" parent="@style/TextAppearance.MaterialComponents.Button">
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.App.Button.Large">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="TextAppearance.App.Emphasis" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

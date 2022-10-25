@@ -24,6 +24,7 @@ class AnimationActivity : AppCompatActivity() {
         // Inflate view and obtain an instance of the binding class.
         binding = DataBindingUtil.setContentView(this, R.layout.activity_animation)
 
+        // Property animation
         binding.propertyAnimatorButton.setOnClickListener {
             (AnimatorInflater.loadAnimator(this, R.animator.property_animator) as AnimatorSet)
                 .apply {
@@ -32,6 +33,7 @@ class AnimationActivity : AppCompatActivity() {
                 }
         }
 
+        // Value animation
         binding.valueAnimatorButton.setOnClickListener {
             (AnimatorInflater.loadAnimator(this, R.animator.value_animator) as ValueAnimator)
                 .apply {
@@ -42,6 +44,7 @@ class AnimationActivity : AppCompatActivity() {
                 }
         }
 
+        // Tween animation
         binding.tweenAnimatorButton.setOnClickListener {
             binding.droidImageView.apply {
                 // reset the content and background of the ImageView if the
@@ -55,6 +58,7 @@ class AnimationActivity : AppCompatActivity() {
             }
         }
 
+        // Frame animation
         binding.frameAnimatorButton.setOnClickListener {
             binding.droidImageView.apply {
                 setImageResource(0)

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.App" parent="" />
+
+    <style name="Widget.App.MyCustomButton">
+        <item name="android:textAppearance">@style/TextAppearance.App.Emphasis</item>
+        <item name="android:textColor">#FFEB3B</item>
+    </style>
+
+    <style name="Widget.App.MaterialButtonCustom" parent="@style/Widget.MaterialComponents.Button">
+        // the ripple color
+        <item name="rippleColor">?attr/rippleColorCustom</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.MaterialButtonCustom</item>
+    </style>
+
+</resources>

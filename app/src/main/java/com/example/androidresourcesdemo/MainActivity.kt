@@ -1,8 +1,10 @@
 package com.example.androidresourcesdemo
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
 import com.example.androidresourcesdemo.databinding.ActivityMainBinding
 
